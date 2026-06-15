@@ -1,0 +1,111 @@
+.checked {
+    text-decoration: line-through;
+    
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#main-container {
+    width: 40%;
+    height: 65vh;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+#add-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+} 
+
+#input-box {
+    width: auto;
+    border: 1px solid #666;
+    border-radius: 5px
+}
+
+
+
+#task-section {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#task-list {
+    width: 60%;
+    flex: 1;
+    min-height: 0;
+    max-height: 40vh;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    display: grid;
+    grid-template-columns: 1.25rem 1fr auto auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #666;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#task-list li:nth-child(even){
+    background-color: #aeaeae;
+}
+
+
+#task-list li button {
+    white-space: nowrap;
+}
+
+.task-text {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+li button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#task-list li:hover {
+    transition-duration: 0.3ms;
+    background-color: #666;
+    border: black solid 1px;
+}
