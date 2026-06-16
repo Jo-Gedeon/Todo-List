@@ -25,6 +25,7 @@ function editTask(event) {
     }
     const li = event.target.parentElement;
     li.innerHTML = `<input type="checkbox" onclick="toggleTask(event)" /> <span class="task-text">${newTask}</span> <button onclick="deleteTask(event)">Delete</button> <button onclick="editTask(event)">Edit</button>`;
+    li.classList.remove("checked")
 }
 
 function toggleTask(event) {
